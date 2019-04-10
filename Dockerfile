@@ -1,3 +1,6 @@
+# Dockerfile sample for RTK Gophercon-2019 Fulltext search cup
+
+
 FROM ubuntu:18.04
 
 RUN apt update -y && apt install -y curl git
