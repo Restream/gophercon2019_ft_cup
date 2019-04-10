@@ -9,14 +9,12 @@ services:
   - docker
 
 before_install:
-  - cd app
   - mkdir data
   - curl -L https://www.dropbox.com/s/npd5k0lpvo22k7m/data.tar.gz?dl=1 | tar xzv -C data
-  - go get github.com/valyala/fasthttp
-  - go build ./cmd/tester
+  - go get github.com/restream/gophercon2019_ft_tester
   - docker pull ${TEST_IMAGE}
   - docker run -d -p8080:8080 -v`pwd`/data:/data ${TEST_IMAGE}
   - sleep 30
 
 script:
-  - ./tester
+  - gophercon2019_ft_tester
