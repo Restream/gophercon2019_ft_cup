@@ -13,10 +13,10 @@ before_install:
   - mkdir data
   - curl -L https://www.dropbox.com/s/npd5k0lpvo22k7m/data.tar.gz?dl=1 | tar xzv -C data
   - go get github.com/valyala/fasthttp
-  # - go build ./cmd/tester
+  - go build ./cmd/tester
   - docker pull ${TEST_IMAGE}
   - docker run -d -p8080:8080 -v`pwd`/data:/data ${TEST_IMAGE}
   - sleep 30
 
 script:
-  # - ./tester
+  - ./tester
