@@ -14,7 +14,7 @@ before_install:
   - go get github.com/restream/gophercon2019_ft_tester
   - docker pull ${TEST_IMAGE}
   - docker run -d -p8080:8080 -v`pwd`/data:/data ${TEST_IMAGE}
-  - sleep 30
+  - sleep 120
 
 script:
   - gophercon2019_ft_tester
