@@ -203,7 +203,7 @@ GET /api/v1/search
 
 ````json
 {
-   "total_itens" : 100,
+   "total_items" : 100,
    "items" : [
       {
           "type" : "media_item",
@@ -244,7 +244,7 @@ GET /api/v1/media_items
 
 ```JSON
 {
-    "total_itens" : 100,
+    "total_items" : 100,
     "items" : [
         {
             "id" : 293823,
@@ -274,7 +274,7 @@ GET /api/v1/epg?
 
 ```JSON
 {
-    "total_itens" : 100,
+    "total_items" : 100,
     "items" : [
         {
             "id" : 293823,
