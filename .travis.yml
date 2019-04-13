@@ -3,7 +3,7 @@ language: go
 
 env:
   global:
-    - TEST_IMAGE=snovichkov/rtk_ft_solution
+    - TEST_IMAGE=snovichkov/rtk_ft_solution:master
 
 services:
   - docker

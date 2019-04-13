@@ -1,0 +1,4 @@
+/.idea
+/bin
+/data
+docker-compose.yml
